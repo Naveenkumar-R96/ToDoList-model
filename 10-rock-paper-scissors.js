@@ -4,7 +4,7 @@ let score = JSON.parse(localStorage.getItem('score')) || {
   ties: 0
 };
 
-  updateScoreElement();
+updateScoreElement();
 
 /*
 if (score==null) {
@@ -38,7 +38,7 @@ function playGame(playerMove) {
     } else if (computerMove === 'scissors') {
       result = 'You lose.';
     }
-    
+
   } else if (playerMove === 'rock') {
     if (computerMove === 'rock') {
       result = 'Tie.';
@@ -48,7 +48,7 @@ function playGame(playerMove) {
       result = 'You win.';
     }
   }
- 
+
   if (result === 'You win.') {
     score.wins += 1;
   } else if (result === 'You lose.') {
